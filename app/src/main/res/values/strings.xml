@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">StudyBuddy</string>
+    <string name="app_name">Study Buddy</string>
+    <string name="my_subjects">My Subjects</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="credits">Credits</string>
+    <string-array name="credit_list">
+        <item>0.75</item>
+        <item>1.00</item>
+        <item>1.50</item>
+        <item>2.00</item>
+        <item>3.00</item>
+        <item>4.00</item>
+    </string-array>
 </resources>
+
+

@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    >
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        ><android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:requiresFadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/add"
+            app:maxImageSize="56dp" /></android.support.design.widget.CoordinatorLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
