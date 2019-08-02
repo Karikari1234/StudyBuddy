@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SubjectObj"></activity>
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/my_subjects" />
+            android:name=".AddSubject"
+            android:label="@string/add_subject"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/SplashAppTheme">
@@ -21,6 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/my_subjects" />
     </application>
 
 </manifest>
